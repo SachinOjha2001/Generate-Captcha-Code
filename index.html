@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Simple CAPTCHA</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>Captcha Validation</h2>
+    <div class="captcha-box">
+      <canvas id="captcha" width="150" height="50"></canvas>
+      <button onclick="generateCaptcha()">⟳</button>
+    </div>
+    <input type="text" id="captcha-input" placeholder="Enter Captcha" />
+    <button onclick="validateCaptcha()">Submit</button>
+    <p id="message"></p>
+    <p id="timer-message">CAPTCHA will expire in <span id="countdown">30</span> seconds.</p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
